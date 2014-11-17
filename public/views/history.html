@@ -1,0 +1,13 @@
+<div class="col-md-8 col-md-offset-2">
+<h3>Response History</h3><span class="pull-right">Number of responses <span ng-model="responses">{{responses.length}}</span></span>
+<table class="table table-striped">
+    <tr>
+        <th>Question</th>
+        <th>Answer</th>
+    </tr>
+    <tr ng-repeat="response in responses">
+        <td>{{response.question}}</td>
+        <td>{{response.answer}}</td>
+    </tr>
+</table>
+</div>

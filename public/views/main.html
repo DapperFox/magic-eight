@@ -1,0 +1,21 @@
+<header>
+    <nav>
+
+    </nav>
+</header>
+<div class="col-sm-4 col-sm-offset-4">
+    <h1>Magic Eight</h1>
+    <div class="eight-ball">
+        <div class="fortune">
+            <p ng-model="askedQuestion">{{model.askedQuestion}}</p>
+            <p ng-model="fortune">{{fortune.fortune}}</p>
+        </div>
+    </div>
+    <form ng-submit="getFortune()">
+        <div class="form-group">
+            <label for="question">Ask a Question</label>
+            <input type="text" id="question" ng-model="model.question" class="form-control">
+        </div>
+        <button class="btn btn-default" type="submit">Foretell</button>
+    </form>
+</div>

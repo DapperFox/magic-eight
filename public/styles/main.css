@@ -1,0 +1,17 @@
+body {
+    background-color: #262626;
+    color: #8C8181;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.2em;
+}
+nav ul li a {
+    color: #F2e6D0;
+}
+nav ul li a:hover {
+    color: #BFAB99;
+    text-decoration: none;
+}

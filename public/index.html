@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Magic Eight</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+</head>
+
+<body ng-app="MagicEight">
+    <nav>
+        <h4>Magic Eight</h4>
+        <ul>
+            <li>
+                <a href="/">Foretell</a>
+            </li>
+            <li>
+                <a href="/#/fortune">Custom Responses</a>
+            </li>
+            <li>
+                <a href="/#/history">Response History</a>
+            </li>
+            <li>
+                <a href="/#/login">Login</a>
+            </li>
+            <li>
+                <a href="/#/register">Register</a>
+            </li>
+        </ul>
+    </nav>
+    <div ng-view></div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/authInterceptor.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/controllers/register.js"></script>
+    <script src="scripts/controllers/fortune.js"></script>
+    <script src="scripts/controllers/history.js"></script>
+    <script src="scripts/services/session.js"></script>
+</body>
+
+</html>

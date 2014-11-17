@@ -1,0 +1,26 @@
+{
+  "name": "MagicEight",
+  "version": "0.0.1",
+  "description": "A magic eight ball api for awesomeness",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "hapi"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^0.8.0",
+    "hapi": "^7.5.2",
+    "hapi-auth-basic": "^1.1.1",
+    "hapi-auth-bearer-token": "^2.2.3",
+    "hat": "0.0.3",
+    "mongoose": "^3.8.19"
+  }
+}
