@@ -9,7 +9,6 @@ angular.module('MagicEight')
                 $scope.model.question = '';
                 if($window.sessionStorage.token) {
                     $http.post('/v1/foretell/record', {
-                        uid: $window.sessionStorage.token,
                         question: $scope.model.askedQuestion,
                         answer: $scope.fortune.fortune 
                     }).success(function (data, status, headers, config) {

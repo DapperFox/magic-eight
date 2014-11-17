@@ -71,15 +71,16 @@ server.pack.register(Auth, function (err) {
                     }, function (err, custom) {
                         custom.forEach(function (item) {
                             fortunes.push(item);
-                            var count = fortunes.length;
-                            var fortune = fortunes[Math.floor(Math.random() * count)];
-                            res(fortune);
                         });
+                        var count = fortunes.length;
+                        var fortune = fortunes[Math.floor(Math.random() * count)];
+                        res(fortune);
                     });
+                } else {
+                        var count = fortunes.length;
+                        var fortune = fortunes[Math.floor(Math.random() * count)];
+                        res(fortune);
                 }
-                var count = fortunes.length;
-                var fortune = fortunes[Math.floor(Math.random() * count)];
-                res(fortune);
             });
         }
     });
@@ -95,7 +96,6 @@ server.pack.register(Auth, function (err) {
             foretellRecord.find({
                 uid: uid
             }, function (err, custom) {
-                console.log(custom);
                 res(custom);
             });
         }
@@ -108,7 +108,6 @@ server.pack.register(Auth, function (err) {
             auth: 'simple'
         },
         handler: function (req, res) {
-            console.log(req.payload.uid + ' q: ' + req.payload.question + ' a: ' + req.payload.answer);
             new foretellRecord({
                 uid: req.payload.uid,
                 question: req.payload.question,
@@ -133,7 +132,6 @@ server.pack.register(Auth, function (err) {
             foretellModel.find({
                 uid: uid
             }, function (err, custom) {
-                console.log(custom);
                 res(custom);
             });
         }
