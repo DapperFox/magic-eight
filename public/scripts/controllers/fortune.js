@@ -28,6 +28,7 @@ angular.module('MagicEight')
             }).
             success(function (data, status, headers, config) {
                 $scope.fortunes.push(data);
+                $scope.fortune = '';
             });
         };
         $scope.saveEdit = function (id) {

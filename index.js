@@ -5,7 +5,7 @@ var Hapi = require('hapi'),
 
     server = new Hapi.Server('localhost', process.env.PORT || 3000);
 
-Mongoose.connect('mongodb://localhost:27017/magic-eight');
+Mongoose.connect('mongodb://heroku:wFP6lb6f687gfyQuW4tVHk2kmtrSe54-KhpnvvMRFgtuj12oSNVyj3Q7QkS66ryfVfJUgwwZk0qRAa_Hl6n84w@dogen.mongohq.com:10033/app31702994');
 var foretellModel = require('./models/foretell.js');
 var userModel = require('./models/user.js');
 var foretellRecord = require('./models/foretellRecord.js');
