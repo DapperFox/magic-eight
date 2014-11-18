@@ -2,11 +2,10 @@ var Hapi = require('hapi'),
     Mongoose = require('mongoose'),
     Bcrypt = require('bcrypt'),
     Auth = require('hapi-auth-bearer-token'),
-    server = new Hapi.Server('localhost', process.env.PORT || 3000);
+    server = new Hapi.Server(~~process.env.PORT || 3000, '0.0.0.0');
 
-console.log(process.env.PORT);
-
-Mongoose.connect(process.env.MONGOHQ_URL);
+var mongoUrl = process.env.MONGOHQ_URL || 'mongodb://heroku:wFP6lb6f687gfyQuW4tVHk2kmtrSe54-KhpnvvMRFgtuj12oSNVyj3Q7QkS66ryfVfJUgwwZk0qRAa_Hl6n84w@dogen.mongohq.com:10033/app31702994';
+Mongoose.connect(mongoUrl);
 var foretellModel = require('./models/foretell.js');
 var userModel = require('./models/user.js');
 var foretellRecord = require('./models/foretellRecord.js');
