@@ -1,6 +1,6 @@
 body {
-    background-color: #262626;
-    color: #8C8181;
+    background-color: #465666;
+    color: #F5625E;
 }
 nav ul li {
     list-style-type: none;
@@ -9,9 +9,13 @@ nav ul li {
     font-size: 1.2em;
 }
 nav ul li a {
-    color: #F2e6D0;
+    color: #68D7C5;
 }
 nav ul li a:hover {
-    color: #BFAB99;
+    color: #49C6F2;
     text-decoration: none;
+}
+.btn-custom {
+    background-color: #68D7C5;
+    color: #232323;
 }
