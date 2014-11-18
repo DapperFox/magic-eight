@@ -1,0 +1,15 @@
+<div class="col-md-4 col-md-offset-4">
+    <h3>Change User Password</h3>
+    <div class="error">{{message}}</div>
+    <form ng-submit="changePassword()">
+        <div class="form-group">
+            <label for="currentPass">Current Password</label>
+            <input type="password" id="currentPass" ng-model="currentPass" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="newPass">New Password</label>
+            <input type="password" id="newPass" ng-model="newPass" class="form-control">
+        </div>
+        <button class="btn btn-danger" type="submit">Change Password</button>
+    </form>
+</div>

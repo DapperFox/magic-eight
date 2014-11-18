@@ -20,6 +20,12 @@ var loginValidate = function (username, password, callback) {
     });
 };
 
+var checkPassword = function (inputPassword, dbPassword, callback) {
+    Bcrypt.compare(inputPassword, dbPassword, function (err, isValid) {
+            callback(err, isValid);
+        });
+};
+
 var validate = function (token, callback) {
 
     userModel.findOne({
@@ -232,6 +238,56 @@ server.pack.register(Auth, function (err) {
             });
         }
     });
+
+    server.route({
+        method: 'GET',
+        path: '/auth/user',
+        config: {
+            auth: 'simple'
+        },
+        handler: function (req, res) {
+            var uid = req.headers.authorization.split(" ")[1];
+            userModel.findOne({ token: uid }, function (err, user) {
+                if(err) {
+                    res(err);
+                }
+                res(user.username);
+            });
+        }
+    });
+
+    server.route({
+        method: 'PUT',
+        path: '/auth/user',
+        config: {
+            auth: 'simple'
+        },
+        handler: function (req, res) {
+            var uid = req.headers.authorization.split(" ")[1];
+            userModel.findOne({
+                token: uid
+            }, function(err, user) {
+                if (err) {
+                    res(err).code(401);
+                } else {
+                    checkPassword(req.payload.currentPass, user.password, function (err, isValid) {
+                        if (isValid) {
+                            Bcrypt.genSalt(10, function (err, salt) {
+                                Bcrypt.hash(req.payload.newPass, salt, function (err, hash) {
+                                    user.password = hash;
+                                    user.save();
+                                    res('Password Changed');
+                                });
+                            });
+                        } else {
+                            res('Password Invalid').code(401);
+                        }
+                    });
+                }
+            });
+        }
+    });
+
 
     server.start(function () {
         console.log('Server now running: ' + server.info.uri);

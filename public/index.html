@@ -15,7 +15,7 @@
 </head>
 
 <body ng-app="MagicEight">
-    <nav>
+    <nav ng-controller="NavCtrl">
         <h4>Magic Eight</h4>
         <ul>
             <li>
@@ -28,10 +28,13 @@
                 <a href="/#/history">Response History</a>
             </li>
             <li>
-                <a href="/#/login">Login</a>
+                <a href="/#/{{loginLink}}">{{loginText}}</a>
             </li>
             <li>
-                <a href="/#/register">Register</a>
+                <a ng-hide="loggedIn" href="/#/register">Register</a>
+            </li>
+            <li>
+                <a href ng-click="logout()" ng-show="loggedIn">Log Out</a>
             </li>
         </ul>
     </nav>
@@ -39,10 +42,12 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/authInterceptor.js"></script>
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/navigation.js"></script>
     <script src="scripts/controllers/login.js"></script>
     <script src="scripts/controllers/register.js"></script>
     <script src="scripts/controllers/fortune.js"></script>
     <script src="scripts/controllers/history.js"></script>
+    <script src="scripts/controllers/user.js"></script>
     <script src="scripts/services/session.js"></script>
 </body>
 

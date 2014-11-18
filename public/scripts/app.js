@@ -22,5 +22,9 @@ angular.module('MagicEight', ['ngRoute']).
             when('/history', {
                 templateUrl: '/views/history.html',
                 controller: 'HistoryCtrl'
+            }).
+            when('/user', {
+                templateUrl: '/views/user.html',
+                controller: 'UserCtrl'
             });
     });
