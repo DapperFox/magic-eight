@@ -2,10 +2,10 @@
     <h1>Magic Eight</h1>
     <div class="eight-ball">
         <div class="fortune">
-            <p ng-model="askedQuestion">{{model.askedQuestion}}</p>
             <p ng-model="fortune">{{fortune.fortune}}</p>
         </div>
     </div>
+    <p ng-model="askedQuestion" class="question">{{model.askedQuestion}}</p>
     <form ng-submit="getFortune()">
         <div class="form-group">
             <label for="question">Ask a Question</label>

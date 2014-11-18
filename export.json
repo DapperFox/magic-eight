@@ -1,0 +1,23 @@
+{ "_id" : { "$oid" : "54623cf113d6f472200fa6f6" }, "fortune" : "It is certain", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623cfa13d6f472200fa6f7" }, "fortune" : "It is decidedly so", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623d0013d6f472200fa6f8" }, "fortune" : "Without a doubt", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623d0b13d6f472200fa6f9" }, "fortune" : "Yes definitely", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623d2c13d6f472200fa6fa" }, "fortune" : "You may rely on it", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623d3413d6f472200fa6fb" }, "fortune" : "As I see it, yes", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623d3d13d6f472200fa6fc" }, "fortune" : "Most likely", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623d4313d6f472200fa6fd" }, "fortune" : "Outlook good", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623d4713d6f472200fa6fe" }, "fortune" : "Yes", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623d7913d6f472200fa6ff" }, "fortune" : "Signs point to yes", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623d8913d6f472200fa700" }, "fortune" : "Reply hazy try again", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623d8f13d6f472200fa701" }, "fortune" : "Ask again later", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623da513d6f472200fa702" }, "fortune" : "Better not tell you now", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623daa13d6f472200fa703" }, "fortune" : "Cannot predict now", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623db313d6f472200fa704" }, "fortune" : "Concentrate and ask again", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623db713d6f472200fa705" }, "fortune" : "Don't count on it", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623dbd13d6f472200fa706" }, "fortune" : "My reply is no", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623dc213d6f472200fa707" }, "fortune" : "My sources say no", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623dc713d6f472200fa708" }, "fortune" : "Outlook not so good", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54623dcb13d6f472200fa709" }, "fortune" : "Very doubtful", "type" : "Default", "__v" : 0 }
+{ "_id" : { "$oid" : "54681e1d8fb35deec5945bde" }, "fortune" : "Ask Nikson", "uid" : "1e2d1170bc316f6f90c7f32ab443e88d", "type" : "Custom", "__v" : 0 }
+{ "_id" : { "$oid" : "54681e3e11de2b1cc64dd735" }, "fortune" : "Ask Jac", "uid" : "1e2d1170bc316f6f90c7f32ab443e88d", "type" : "Custom", "__v" : 0 }
+{ "_id" : { "$oid" : "54681fdf1a018408c8661379" }, "fortune" : "Shake Harder Next Time", "uid" : "1e2d1170bc316f6f90c7f32ab443e88d", "type" : "Custom", "__v" : 0 }
